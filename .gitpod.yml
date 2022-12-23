@@ -1,0 +1,6 @@
+tasks:
+  - before: hugo mod get -u
+    command: hugo serve
+
+image:
+  file: .gitpod/Dockerfile
