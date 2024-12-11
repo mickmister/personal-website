@@ -1,33 +1,71 @@
 {{ if .Site.Data.homepage.contact.enable }}
+<script>
+    window.addEventListener('load', () => {
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        this.reset();
+                        document.getElementById('contact-form-success-message').style = 'display: block;';
+
+                    } else {
+                        console.error('Failed to send message.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while sending the message.');
+                });
+        });
+    });
+</script>
+
 <section id="contact" class="section section--contact pt-0">
     <div class="container">
         <div class="contact">
             <h2>{{ .Site.Data.homepage.contact.title }}</h2>
             <div class="row pt-2">
                 <div class="col-12 col-lg-7">
-                    <form action="{{ .Site.Data.homepage.contact.form.action }}" method="{{ .Site.Data.homepage.contact.form.method }}">
+                    <form method="{{ .Site.Data.homepage.contact.form.method }}" id="contact-form">
+                        <input type="hidden" name="access_key" value='{{ getenv "WEB3FORM_ACCESS_TOKEN" }}'>
                         <div class="row">
                             <div class="col-12 col-sm-6">
-                                <input type="text" name="full_name" id="full_name"
-                                       placeholder="{{ .Site.Data.homepage.contact.form.full_name }}"/>
+                                <input type="text" name="name" id="full_name" required
+                                    placeholder="{{ .Site.Data.homepage.contact.form.full_name }}" />
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="text" name="email" id="email"
-                                       placeholder="{{ .Site.Data.homepage.contact.form.email }}"/>
+                                <input type="email" name="email" id="email" required
+                                    placeholder="{{ .Site.Data.homepage.contact.form.email }}" />
                             </div>
                         </div>
                         <div class="row pt-4">
                             <div class="col-12">
-                                <textarea name="message" id="message"
-                                          cols="30" rows="3" placeholder="{{ .Site.Data.homepage.contact.form.message }}"></textarea>
+                                <textarea name="message" id="message" required cols="30" rows="3"
+                                    placeholder="{{ .Site.Data.homepage.contact.form.message }}"></textarea>
                             </div>
                         </div>
                         <div class="row pt-4">
                             <div class="col-12">
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                                 <button type="submit" class="btn btn-primary">
                                     <i class="{{ .Site.Data.homepage.contact.button.icon }}"></i>
                                     {{ .Site.Data.homepage.contact.button.btnText }}
                                 </button>
+                            </div>
+                        </div>
+                        <div id="contact-form-success-message" class="row pt-4" style="display: none;">
+                            <div class="col-12">
+                                <p>
+                                    Thanks! I'll follow up with you shortly.
+                                </p>
                             </div>
                         </div>
                     </form>
@@ -39,6 +77,8 @@
                     <span>{{ .Site.Data.homepage.contact.email.email | safeHTML }}</span>
                     <h3>{{ .Site.Data.homepage.contact.address.title }}</h3>
                     <span>{{ .Site.Data.homepage.contact.address.address | safeHTML }}</span>
+                    <h3>{{ .Site.Data.homepage.contact.heading }}</h3>
+                    <p>{{ .Site.Data.homepage.contact.description }}</h3>
                 </div>
             </div>
         </div>
