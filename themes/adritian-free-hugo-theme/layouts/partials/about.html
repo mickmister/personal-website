@@ -4,7 +4,7 @@
     <div class="row d-flex flex-column-reverse flex-md-row">
       <div class="about__profile-picture col-12 col-md-6">
         {{ $img := resources.Get .Site.Data.homepage.about.image.x }}
-        {{ $img2x := resources.Get .Site.Data.homepage.about.image._2x }}      
+        {{ $img2x := resources.Get .Site.Data.homepage.about.image._2x }}
         {{ $imgWebp := $img.Resize (printf "%dx%d webp" $img.Width $img.Height) }}
         {{ $img2xWebp := $img.Resize (printf "%dx%d webp" $img2x.Width $img2x.Height) }}
         <picture>
@@ -25,14 +25,14 @@
       <div class="col-12 col-md-6 my-auto my-auto">
         <h2>{{ .Site.Data.homepage.about.title }}</h2>
         {{ .Site.Data.homepage.about.content | safeHTML }}
-        <a
+        <!-- <a
           href="{{ .Site.Data.homepage.about.button.URL | absURL }}"
           target="_blank"
           class="btn btn-primary"
         >
           <i class="{{ .Site.Data.homepage.about.button.icon }}"></i>
           {{ .Site.Data.homepage.about.button.btnText }}
-        </a>
+        </a> -->
       </div>
     </div>
   </div>

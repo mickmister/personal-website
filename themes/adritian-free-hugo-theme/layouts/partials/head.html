@@ -61,3 +61,16 @@
 <!-- no google tag displayed -->
 {{ end }}
 <script src='{{ "js/library/lozad.min.js" | absURL }}'></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('a[href]');
+    links.forEach(link => {
+      const url = new URL(link.href);
+      if (url.origin !== window.location.origin) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    });
+  });
+</script>

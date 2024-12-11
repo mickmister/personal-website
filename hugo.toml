@@ -25,14 +25,14 @@ theme = "adritian-free-hugo-theme"
 # navigation
 [menu]
 
-  [[menu.header]]
-  name = "About"
-  URL = "#about"
-  weight = 2
+  # [[menu.header]]
+  # name = "About"
+  # URL = "#about"
+  # weight = 2
 
   [[menu.header]]
-  name = "Portfolio"
-  URL = "#portfolio"
+  name = "Newsletter"
+  URL = "#newsletter"
   weight = 3
 
 #  [[menu.header]]
@@ -42,8 +42,8 @@ theme = "adritian-free-hugo-theme"
 
   [[menu.header]]
   name = "Blog"
-  URL = "/blog"
-  weight = 5
+  URL = "/blog/post1"
+  weight = 2
 
   [[menu.header]]
   name = "Contact"
@@ -51,13 +51,23 @@ theme = "adritian-free-hugo-theme"
   weight = 6
 
   [[menu.footer]]
-  name = "About"
-  URL = "#about"
+  name = "Blog"
+  URL = "/blog/post1"
   weight = 2
 
+  # [[menu.footer]]
+  # name = "About"
+  # URL = "#about"
+  # weight = 2
+
+  # [[menu.footer]]
+  # name = "Portfolio"
+  # URL = "#portfolio"
+  # weight = 3
+
   [[menu.footer]]
-  name = "Portfolio"
-  URL = "#portfolio"
+  name = "Newsletter"
+  URL = "#newsletter"
   weight = 3
 
   [[menu.footer]]
@@ -68,7 +78,7 @@ theme = "adritian-free-hugo-theme"
 
 [params]
 
-  sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
+  sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial",  "newsletter", "contact"]
 
   homepageExperienceCount = 6
 

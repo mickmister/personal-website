@@ -11,7 +11,12 @@ showcase:
   # description: >
     # This is a good place to start with an introduction about yourself. Maybe a mention to the place <a target='_blank' href='https://www.adrianmoreno.info/'>where you work</a>. You can also mention where you live, your background and what's the purpose of the site. <br>You can download this theme from <a target='_blank' href='https://github.com/zetxek/adritian-free-hugo-theme'>github</a>, and see it live <a target='_blank' href="https://adritian-demo.vercel.app//">as a demo site</a> or <a target='_blank' href="https://www.adrianmoreno.info">a real one</a>.<br>You can find this content to edit in the theme.yaml file.
   description: >
-    I'm a gangsta
+    <p>
+      I'm a software developer with a love of music creation. More specifically, I'm a big fan of improvised jamming, which has greatly influenced the goals of the programs being created for the suite of music software called <a href="https://jam.tools">Jam Tools</a>.
+    </p>
+    <p>
+      Read the <a href="/blog">blog</a> to learn more about the projects we're working on.
+    </p>
   image:
     x: "images/showcase/showcase.jpeg"
     _2x: "images/showcase/showcase@2x.jpeg"
@@ -41,7 +46,7 @@ showcase:
 
 about:
   enable: true
-  title: "Who am I?"
+  title: "About Me"
   # content: >
   #   <p class="lead">
   #     Here you can add some information about you. A small excerpt that describes
@@ -55,8 +60,8 @@ about:
   #     what kind of projects you are interested in.
   #   </p>
   content: >
-    <p class="lead">
-      I told you - I'm Michael.
+    <p>
+      I like listening to music and playing music.
     </p>
 
   button:
@@ -126,6 +131,14 @@ testimonial:
     #     x: "images/testimonials/antonio-willis.jpg"
     #     _2x: "images/testimonials/antonio-willis@2x.jpg"
 
+newsletter:
+  enable: true
+  title: "Jam Tools newsletter"
+  success_message: "Successfully subscribed"
+  error_message: "Error while subscribing."
+  note: "Sign up to get the latest updates on the Jam Tools projects!"
+  url: "https://jamtools.kit.com/2b15625d04"
+
 # contact
 contact:
   enable: true
@@ -137,6 +150,7 @@ contact:
     full_name: "Name"
     email: "Email Address"
     message: "Type Your Message Here"
+    success_message: "Thanks! I'll follow up with you shortly."
   # phone:
   #   title: "Phone Number"
   #   number: "+555 (11) 123 44 55"
@@ -146,16 +160,7 @@ contact:
   # address:
   #   title: "Address"
   #   address: "Exact street/neighborhood (you can omit this)<br />Postcode, City"
-  heading: Feel free to send me a message and I'll get back to you at my earliest convenience.
+  heading: Have an idea or feedback on something? Feel free to send me a message and I'll get back to you at my earliest convenience.
   button:
     icon: "icon-mail-fill"
     btnText: "Send Message"
-
-# newsletter
-newsletter:
-  enable: true
-  title: "Jam Tools newsletter"
-  success_message: "Successfully subscribed"
-  error_message: "Error while subscribing."
-  # note: "We'll never share your email with anyone else."
-  url: "https://jamtools.kit.com/2b15625d04"

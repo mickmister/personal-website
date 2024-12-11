@@ -1,13 +1,14 @@
 {{ if .Site.Data.homepage.newsletter.enable }}
-<section class="section section--cta">
+<section id="newsletter" class="section section--cta">
 <div class="container">
   <div class="row">
     <div class="col-12 text-center">
       <h2>{{ .Site.Data.homepage.newsletter.title }}</h2>
+      <p>{{ .Site.Data.homepage.newsletter.note }}</p>
       <div>
           <a href="{{ .Site.Data.homepage.newsletter.url }}" target="_blank" rel="noopener noreferrer">
             <button id="rad-subscription-submit" class="btn btn-light btn-rounded">
-              Sign Up
+              Let's Jam!
             </button>
           </a>
         </div>
