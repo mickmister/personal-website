@@ -34,11 +34,10 @@
 {{ end }}
 
 <link
-  rel="preload"
+  rel="stylesheet"
   href="{{ $css.RelPermalink }}"
   as="style"
   data-generator="purgeCSS"
-  onload="this.onload=null;this.rel='stylesheet'"
   {{ if hugo.IsProduction -}}
     integrity="{{ $css.Data.Integrity }}"
   {{- end }}
