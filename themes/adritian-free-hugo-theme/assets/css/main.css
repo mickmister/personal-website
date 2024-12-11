@@ -9694,7 +9694,7 @@ input[type="email"]::placeholder {
 .rad-subscription-group input[type="email"]::-webkit-input-placeholder,
 .rad-subscription-group input[type="email"]::-moz-placeholder,
 .rad-subscription-group input[type="email"]::-ms-input-placeholder,
-.rad-subscription-group input[type="email"]::placeholder 
+.rad-subscription-group input[type="email"]::placeholder
 {
     color: #fff;
 }
@@ -10015,10 +10015,13 @@ textarea:focus {
     padding-left: 15px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(0, 0, 0, 0.6);
+    /* color: rgba(0, 0, 0, 0.6); */
     line-height: 1.24;
     margin-bottom: 12px;
     text-align: left;
+}
+.section li::marker {
+    color: white;
 }
 .section li::before {
     content: "";
@@ -10710,7 +10713,7 @@ body.home div.experience{
 .experience.selected a,
 .experience:hover a,
 .experience:active a,
-.experience a:hover, 
+.experience a:hover,
 .experience a:active{
     display: block;
     background-color: #488079;
@@ -10804,7 +10807,7 @@ aside.content-browser{
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1280px){
-    .header{ 
+    .header{
         padding-top: 10px;
     }
 }
@@ -10815,10 +10818,10 @@ aside.content-browser{
     }
 }
 
-@media only screen and (min-width : 992px) {    
+@media only screen and (min-width : 992px) {
     .rad-showcase{
         padding-top: 40px;
-    }    
+    }
 }
 
 /* end adritian custom css */
@@ -10838,14 +10841,14 @@ aside.content-browser{
     .header.collapse.show::before, .header.collapsing::before{
         background-color: #181818;
     }
-    
+
     @media only screen and (max-width : 990px) {
         .header .navbar .nav-item:first-child{
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         .header .navbar .nav-item{
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }    
+        }
     }
     .header--sticky-triggered{
         background: #181818;
@@ -10877,7 +10880,7 @@ aside.content-browser{
     .experience__company{
         color: #6EAFAA;
     }
-    
+
     .education__degree, .experience__date{
         color: #a6a6a6;
     }

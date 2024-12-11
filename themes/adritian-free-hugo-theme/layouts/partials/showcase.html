@@ -25,8 +25,13 @@
 
   {{ $img := resources.Get .Site.Data.homepage.showcase.image.x }}
   {{ $img2x := resources.Get .Site.Data.homepage.showcase.image._2x }}
+  {{ $imgWebp := $img.Resize (printf "%dx%d webp q75 Lanczos picture" $img.Width $img.Height) }}
+  {{ $img2xWebp := $img2x.Resize (printf "%dx%d webp q75 Lanczos picture" $img2x.Width $img2x.Height) }}
+
 
   <picture>
+    <source srcset="{{ $imgWebp.RelPermalink }} 1x, {{ $img2xWebp.RelPermalink }} 2x" type="image/webp" />
+    <source srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x" type="image/webp">
     <img
       width="{{ $img.Width }}"
       height="{{ $img.Height }}"
