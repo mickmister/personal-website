@@ -1,4 +1,4 @@
-baseURL = "https://www.adrianmoreno.info"
+baseURL = "http://localhost:1313"
 languageCode = "en-us"
 theme = "adritian-free-hugo-theme"
 
@@ -75,20 +75,20 @@ theme = "adritian-free-hugo-theme"
   # controls vercel page insights - disabled by default
   vercelPageInsights = false
   vercelAnalytics = false
-  
+
   [params.google_analytics]
       code = "UA-XXXXX-Y"
       enabled = false
   [params.google_tag_manager]
       code = "GTM-XXXXX"
       enabled = false
-  
+
   [params.logo]
-    text1 = "Cool"
-    text2 = "Name"
+    text1 = ""
+    text2 = ""
 
   [params.footer]
-      copyright = "© Adritian. Free Hugo theme by Adrián Moreno Peña."
+      copyright = ""
       [params.footer.radity_logo]
         x = "img/general/design-and-code-radity.png"
         _2x = "img/general/design-and-code-radity@2x.png"

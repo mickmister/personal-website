@@ -1,103 +1,91 @@
 # page title
 head:
-  title: "Demo site for Adritian - a high performance hugo theme by Adrián Moreno"
-  description: "This hugo theme (Adritian) is based on Boostrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications."
+  title: "Michael Kochell"
+  description: "Software Developer"
 # showcase
 showcase:
   enable: true
-  title: "Hello, I’m Cool."
-  subtitle: "This is my title"
+  title: "Hello, I’m Michael"
+  subtitle: ""
+  # subtitle: "This is my title"
+  # description: >
+    # This is a good place to start with an introduction about yourself. Maybe a mention to the place <a target='_blank' href='https://www.adrianmoreno.info/'>where you work</a>. You can also mention where you live, your background and what's the purpose of the site. <br>You can download this theme from <a target='_blank' href='https://github.com/zetxek/adritian-free-hugo-theme'>github</a>, and see it live <a target='_blank' href="https://adritian-demo.vercel.app//">as a demo site</a> or <a target='_blank' href="https://www.adrianmoreno.info">a real one</a>.<br>You can find this content to edit in the theme.yaml file.
   description: >
-    This is a good place to start with an introduction about yourself. Maybe a mention to the place <a target='_blank' href='https://www.adrianmoreno.info/'>where you work</a>. You can also mention where you live, your background and what's the purpose of the site. <br>You can download this theme from <a target='_blank' href='https://github.com/zetxek/adritian-free-hugo-theme'>github</a>, and see it live <a target='_blank' href="https://adritian-demo.vercel.app//">as a demo site</a> or <a target='_blank' href="https://www.adrianmoreno.info">a real one</a>.<br>You can find this content to edit in the theme.yaml file.
+    I'm a gangsta
   image:
-    x: "images/showcase/showcase.png"
-    _2x: "images/showcase/showcase@2x.png"
+    x: "images/showcase/showcase.jpeg"
+    _2x: "images/showcase/showcase@2x.jpeg"
   imageMobile:
     x: "images/showcase/showcase-mobile.jpg"
 
   button:
     icon: "icon-mail-fill"
     btnText: "Contact"
-    URL: "https://www.adrianmoreno.info/"
+    URL: "http://localhost:1313/#contact"
 
   socialLinks:
     - icon: "linkedin"
-      URL: "https://www.linkedin.com/in/adrianmoreno/"
+      URL: "https://www.linkedin.com/in/michael-kochell-09a61882"
 
     - icon: "github"
-      URL: "https://github.com/zetxek"
+      URL: "https://github.com/mickmister"
 
     - icon: "twitter"
-      URL: "https://twitter.com/zetxek"
-
-    - icon: "dribbble"
-      URL: "#"
-
-    - icon: "behance"
-      URL: "#"
+      URL: "https://twitter.com/drparse"
 
     - icon: "youtube"
-      URL: "#"
+      URL: "https://www.youtube.com/@mickmister"
 
     - icon: "instagram"
-      URL: "https://www.instagram.com/zetxek/"
+      URL: "https://www.instagram.com/kochell_music"
 
-    - icon: "facebook"
-      URL: "https://www.facebook.com/zetxek/"
-
-    - icon: "codepen"
-      URL: "#"
-
-    - icon: "yelp"
-      URL: "https://www.yelp.com/"
-
-# about
 about:
   enable: true
   title: "Who am I?"
+  # content: >
+  #   <p class="lead">
+  #     Here you can add some information about you. A small excerpt that describes
+  #     your experience, for example.
+  #     </p>
+  #     <p class="lead">
+  #     You explain something about your academic/study background, as well as your
+  #     preferred areas of work. Think of this area as context-setting for the experience
+  #     that you will describe below. Why did you change jobs? What drove you to take a
+  #     new gig? Even if you are not looking for a job, it's a good way to hint about
+  #     what kind of projects you are interested in.
+  #   </p>
   content: >
     <p class="lead">
-      Here you can add some information about you. A small excerpt that describes
-      your experience, for example.
-      </p>
-      <p class="lead">
-      You explain something about your academic/study background, as well as your
-      preferred areas of work. Think of this area as context-setting for the experience
-      that you will describe below. Why did you change jobs? What drove you to take a
-      new gig? Even if you are not looking for a job, it's a good way to hint about
-      what kind of projects you are interested in.
+      I told you - I'm Michael.
     </p>
+
   button:
     icon: "icon-smile-fill"
     btnText: "About Me"
-    URL: "https://www.linkedin.com/in/adrianmoreno/"
+    # URL: "https://www.linkedin.com/in/michael-kochell-09a61882"
   image:
-    x: "images/who-am-i/user-picture.png"
-    _2x: "images/who-am-i/user-picture@2x.png"
+    x: "images/who-am-i/user-picture.jpg"
+    _2x: "images/who-am-i/user-picture@2x.jpg"
 
 # education
 education:
-  enable: true
+  enable: false
   title: "Education"
   items:
-    - university: "University of Life"
-      year: "2012-2017"
-      degree: "Bachelor of Applied Science (BASc), Electrical Engineering"
-
-    - university: "High School of Hard Knocks"
-      year: "2009-2012"
-      degree: "High School Diploma, Sciences, Math, Computer & Business Studies"
+    - university: ""
+      year: "2012-2016"
+      degree: "Bachelor of Software Engineering"
 
 # experience
 experience:
-  enable: true
+  enable: false
   title: "Experience"
   description: >
     This is where you can highlight a bit over your experience. Years of total experience, specialization, etc.
   button:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"
-    URL: "https://www.linkedin.com/in/adrianmoreno/"
+    URL: "https://www.linkedin.com/in/michael-kochell-09a61882"
   button2:
     icon: "icon-profile-fill"
     btnText: "Download My Resume"
@@ -110,52 +98,55 @@ experience:
 # Client & Work
 client_and_work:
   title: "Clients & Works"
-  enable: true
+  enable: false
 
 # testimonial
 testimonial:
-  enable: true
+  enable: false
   title: "Testimonials"
   items:
-    - name: "Daniel Jordan"
-      position: "Phonet, CEO"
-      content: "Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression."
-      image:
-        x: "images/testimonials/daniel-jordan.jpg"
-        _2x: "images/testimonials/daniel-jordan@2x.jpg"
+    # - name: "Daniel Jordan"
+    #   position: "Phonet, CEO"
+    #   content: "Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression."
+    #   image:
+    #     x: "images/testimonials/daniel-jordan.jpg"
+    #     _2x: "images/testimonials/daniel-jordan@2x.jpg"
 
-    - name: "Jonathan Peters"
-      position: "Textic, CEO"
-      content: "Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation."
-      image:
-        x: "images/testimonials/jonathan-peters.jpg"
-        _2x: "images/testimonials/jonathan-peters@2x.jpg"
+    # - name: "Jonathan Peters"
+    #   position: "Textic, CEO"
+    #   content: "Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation."
+    #   image:
+    #     x: "images/testimonials/jonathan-peters.jpg"
+    #     _2x: "images/testimonials/jonathan-peters@2x.jpg"
 
-    - name: "Antonio Willis"
-      position: "Cyberse, CEO"
-      content: "In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet."
-      image:
-        x: "images/testimonials/antonio-willis.jpg"
-        _2x: "images/testimonials/antonio-willis@2x.jpg"
+    # - name: "Antonio Willis"
+    #   position: "Cyberse, CEO"
+    #   content: "In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet."
+    #   image:
+    #     x: "images/testimonials/antonio-willis.jpg"
+    #     _2x: "images/testimonials/antonio-willis@2x.jpg"
 
 # contact
 contact:
   enable: true
   title: "Contact"
   form:
-    action: "#"
-    full_name: "Full Name"
+    # action: #
+    action: https://api.web3forms.com/submit
+    method: POST
+    full_name: "Name"
     email: "Email Address"
     message: "Type Your Message Here"
-  phone:
-    title: "Phone Number"
-    number: "+555 (11) 123 44 55"
-  email:
-    title: "Email"
-    email: '<a href="mailto:mail@example.com">mail@example.com</a>'
-  address:
-    title: "Address"
-    address: "Exact street/neighborhood (you can omit this)<br />Postcode, City"
+  # phone:
+  #   title: "Phone Number"
+  #   number: "+555 (11) 123 44 55"
+  # email:
+  #   title: "Email"
+  #   email: '<a href="mailto:mail@example.com">mail@example.com</a>'
+  # address:
+  #   title: "Address"
+  #   address: "Exact street/neighborhood (you can omit this)<br />Postcode, City"
+  heading: Feel free to send me a message and I'll get back to you at my earliest convenience.
   button:
     icon: "icon-mail-fill"
     btnText: "Send Message"
@@ -163,7 +154,8 @@ contact:
 # newsletter
 newsletter:
   enable: true
-  title: "Newsletter subscription"
+  title: "Jam Tools newsletter"
   success_message: "Successfully subscribed"
   error_message: "Error while subscribing."
-  note: "We'll never share your email with anyone else."
+  # note: "We'll never share your email with anyone else."
+  url: "https://jamtools.kit.com/2b15625d04"
