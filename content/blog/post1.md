@@ -33,6 +33,4 @@ Because of these requirements, the project has since turned into a framework for
 
 The generic application framework powering the application is available on npm, published as [`springboard`](https://www.npmjs.com/package/springboard), whereas the code to make MIDI-related features is located at [`@jamtools/core`](https://www.npmjs.com/package/@jamtools/core). Check out the [repo](https://github.com/jamtools/jamtools) and [documentation](https://docs.jam.tools) for more info.
 
-I am now using `springboard` for all my current applications in development, whether they are related to music or not. I find the patterns of dependency injection make it easy to write tests for otherwise complex pieces of functionality.
-
 The project is open-source to enable developers to make their own MIDI applications, and also collaborate together on features to include into a common application. Feel free to join the Jam Tools [Discord server](https://jam.tools/discord) to join the conversation.
